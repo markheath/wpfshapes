@@ -45,8 +45,8 @@ namespace WpfShapes
             double width = ActualWidth - StrokeThickness;
             double height = ActualHeight - StrokeThickness;
 
-            //return Geometry.Parse(String.Format("M {0},{0} h {1} v 100 Z", StrokeThickness / 2.0, width));
-            return Geometry.Parse(String.Format("M {0},0 h {1} v {2} h -{1} l -{0},-{0} v -{3} Z", cornerWidth, width-cornerWidth, height, height-(2 * cornerWidth)));
+            return Geometry.Parse(String.Format("M {0},{1} h {3} v {4} h -{3} l -{2},-{2} v -{5} Z", 
+                cornerWidth + StrokeThickness/2, StrokeThickness/2, cornerWidth, width-cornerWidth, height, height-(2 * cornerWidth)));
         }
     }
 }
