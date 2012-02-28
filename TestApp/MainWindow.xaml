@@ -4,6 +4,6 @@
         xmlns:my="clr-namespace:WpfShapes;assembly=WpfShapes"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <my:Label Stroke="Black" Fill="Beige" StrokeThickness="2" Margin="30" CornerWidth="20" />
+        <my:Label Stroke="Black" Fill="Beige" StrokeThickness="10" Margin="0" CornerWidth="20" />
     </Grid>
 </Window>
