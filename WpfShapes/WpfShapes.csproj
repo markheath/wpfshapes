@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Hexagon.cs" />
     <Compile Include="RoundedSidesRectangle.cs" />
+    <Compile Include="Triangle.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
