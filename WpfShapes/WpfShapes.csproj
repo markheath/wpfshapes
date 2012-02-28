@@ -49,6 +49,7 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Diamond.cs" />
     <Compile Include="Hexagon.cs" />
     <Compile Include="Label.cs" />
     <Compile Include="RoundedSidesRectangle.cs" />

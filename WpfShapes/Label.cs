@@ -37,7 +37,6 @@ namespace WpfShapes
             ((Shape)d).InvalidateVisual();
         }
 
-
         private Geometry GetGeometry()
         {
             double cornerWidth = CornerWidth;
