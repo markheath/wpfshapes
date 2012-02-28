@@ -4,6 +4,6 @@
         xmlns:my="clr-namespace:WpfShapes;assembly=WpfShapes"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <my:Diamond Stroke="Black" Fill="Beige" StrokeThickness="10" Margin="0" />
+        <my:SpeechBubble Stroke="Black" Fill="Beige" StrokeThickness="5" Margin="0" />
     </Grid>
 </Window>
