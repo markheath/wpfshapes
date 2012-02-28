@@ -53,6 +53,7 @@
     <Compile Include="Hexagon.cs" />
     <Compile Include="Label.cs" />
     <Compile Include="RoundedSidesRectangle.cs" />
+    <Compile Include="SpeechBubble.cs" />
     <Compile Include="Triangle.cs" />
   </ItemGroup>
   <ItemGroup>
