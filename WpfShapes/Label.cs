@@ -21,9 +21,26 @@ namespace WpfShapes
             return constraint;
         }
 
+        public double CornerWidth
+        {
+            get { return (double)GetValue(CornerWidthProperty); }
+            set { SetValue(CornerWidthProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for CornerWidth.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty CornerWidthProperty =
+            DependencyProperty.Register("CornerWidth", typeof(double), typeof(Label), new UIPropertyMetadata(10.0, OnCornerWidthChanged));
+
+        
+        private static void OnCornerWidthChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            ((Shape)d).InvalidateVisual();
+        }
+
+
         private Geometry GetGeometry()
         {
-            double cornerWidth = 20;
+            double cornerWidth = CornerWidth;
             //double width = ActualWidth - StrokeThickness;
             double width = ActualWidth - StrokeThickness;
             double height = ActualHeight - StrokeThickness;
