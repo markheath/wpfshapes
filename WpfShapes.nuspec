@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package >
+<package>
   <metadata>
     <id>WpfShapes</id>
     <version>0.1</version>
@@ -9,7 +9,7 @@
     <licenseUrl>http://wpfshapes.codeplex.com/license</licenseUrl>
     <projectUrl>http://wpfshapes.codeplex.com</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Collection of WPF</description>
+    <description>Collection of WPF shape controls</description>
     <copyright>Copyright Mark Heath 2012</copyright>
     <tags>WPF XAML Shapes Controls</tags>
   </metadata>
