@@ -10,6 +10,13 @@ namespace WpfShapes
 {
     public class Triangle : Shape
     {
+        public Triangle() : base()
+        {
+            this.Stretch = System.Windows.Media.Stretch.Fill;
+            this.StrokeLineJoin = PenLineJoin.Round;
+        }
+
+
         public enum Orientation
         {
             N,

@@ -4,6 +4,23 @@
         xmlns:my="clr-namespace:WpfShapes;assembly=WpfShapes"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <my:SpeechBubble Stroke="Black" Fill="Beige" StrokeThickness="5" Margin="0" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <my:SpeechBubble Stroke="Black" Fill="Beige" StrokeThickness="5" Margin="2" />
+        <my:Diamond Stroke="Crimson" StrokeThickness="5" Fill="BlanchedAlmond" Grid.Column="1" Margin="2"/>
+        <my:Label Stroke="DarkMagenta" Fill="LightPink" StrokeThickness="5" Margin="2" Grid.Column="1" Grid.Row="1" CornerWidth="30" />
+        <my:Hexagon Stroke="DarkGreen" Fill="LightGreen" StrokeThickness="5" Margin="2" Grid.Column="0" Grid.Row="1" />
+        <my:Triangle Stroke="DarkBlue" Fill="AliceBlue" StrokeThickness="5" Margin="2" Grid.Column="2" Grid.Row="1" />
+        <my:RoundedSidesRectangle Stroke="OrangeRed" Fill="Cornsilk" StrokeThickness="5" Margin="2" Grid.Column="2" Grid.Row="0" />
+        <my:Triangle Stroke="DarkBlue" Fill="AliceBlue" StrokeThickness="5" Margin="2" Grid.Column="2" Grid.Row="2" TriangleOrientation="SW" />
+        <my:Chevron Stroke="Brown" Fill="Beige" StrokeThickness="5" Margin="2" Grid.Column="1" Grid.Row="2" />
     </Grid>
 </Window>
