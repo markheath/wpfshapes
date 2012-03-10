@@ -9,6 +9,10 @@ namespace WpfShapes
 {
     public class Hexagon : Shape
     {
+        public Hexagon() :base()
+        {
+            this.Stretch = System.Windows.Media.Stretch.Fill;
+        }
         protected override Geometry DefiningGeometry
         {
             get { return GetGeometry(); }

@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Windows.Shapes;
 using System.Windows.Media;
+using System.Windows.Shapes;
 
 namespace WpfShapes
 {
-    public class RoundedSidesRectangle : Shape
+    public class Chevron : Shape
     {
-        public RoundedSidesRectangle() : base()
+        public Chevron()
         {
-            this.Stretch = System.Windows.Media.Stretch.Fill;
+            this.Stretch = Stretch.Fill;
+            this.StrokeLineJoin = PenLineJoin.Round;
         }
 
         protected override Geometry DefiningGeometry
@@ -21,7 +22,7 @@ namespace WpfShapes
 
         private Geometry GetGeometry()
         {
-            return Geometry.Parse("M 20,10 h 100 a 100,100,45,0,1,0,100 h -100 a 100,100,-45,0,1,0,-100 Z");
+            return Geometry.Parse("M 0, 40 l 20, -40 l 20, 40 h -10 l -10, -20 l -10, 20 Z");
         }
     }
 }
