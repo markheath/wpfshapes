@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>WpfShapes</id>
+    <version>0.1</version>
+    <title>WPF Shapes</title>
+    <authors>Mark Heath</authors>
+    <owners>Mark Heath</owners>
+    <licenseUrl>http://wpfshapes.codeplex.com/license</licenseUrl>
+    <projectUrl>http://wpfshapes.codeplex.com</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Collection of WPF</description>
+    <copyright>Copyright Mark Heath 2012</copyright>
+    <tags>WPF XAML Shapes Controls</tags>
+  </metadata>
+  <files>
+    <file src="WpfShapes\bin\Release\WpfShapes.dll" target="lib\net40"/>
+  </files>
+</package>
